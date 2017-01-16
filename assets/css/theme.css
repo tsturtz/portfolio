@@ -87,22 +87,30 @@ p,
 	padding: 80px 60px;
 }
 
+.white-layer, .black-layer, .clear-layer, .meetup-layer, .realvalue-layer, .ann-layer, .sgt-layer {
+	width: 100%;
+	height: 100%;
+}
 .white-layer {
 	background: rgba(255, 255, 255, 0.9);
-	width: 100%;
-	height: 100%;
 }
-
 .black-layer {
 	background: rgba(0, 0, 0, 0.5);
-	width: 100%;
-	height: 100%;
+}
+.realvalue-layer {
+	background-color: #4b4b4b;
+}
+.meetup-layer {
+	background-color: #b25051;
+}
+.ann-layer {
+	background-color: #6e8aa2;
+}
+.sgt-layer {
+	background-color: #3a889f;
 }
 
-.clear-layer {
-	width: 100%;
-	height: 100%;
-}
+
 
 .profile-box a,
 .toggle-btn, 
@@ -146,6 +154,7 @@ textarea {
 }
 
 /*.home-box img,*/
+.profile-img,
 .service-box div:first-child, 
 .testimonial-box img, 
 .info i {
@@ -515,11 +524,25 @@ textarea {
 	padding-top: 10px;
 	text-align: center;
 	color: white;
+	font-size: 12px;
 }
 
 .image-title h3, .image-title h4, .image-title h2 {
 	color: #fff;
 	font-weight: 400;
+}
+
+.image-title h2 {
+	margin-bottom: 20px;
+}
+
+.image-title ul {
+	text-align: left;
+}
+
+.image-title i {
+	vertical-align: middle;
+	font-size: 14px;
 }
 
 .image-title h2::before {
@@ -622,6 +645,11 @@ textarea {
 	color: rgb(20, 20, 20);
 	font-size: 18px;
 	line-height: 50px;
+}
+
+.service-box .devicons-scrum, .service-box .devicons-git, .service-box .devicons-database {
+	font-size: 26px;
+	line-height: 48px;
 }
 
 /*-------------------------------------------------
@@ -933,11 +961,6 @@ textarea:focus {
 	line-height: 28px;
 }
 
-.col-right a i.icon-angellist {
-	font-size: 15px;
-	line-height: 27px;
-}
-
 .footer-background a:hover {
 	color: #fff;
 	text-decoration: none;
@@ -966,7 +989,7 @@ textarea:focus {
 }
 
 .profile-background {
-	background: url("../images/MeAndEva.jpg") no-repeat;
+	background: url("../images/foosball-light-blur.jpg") no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-ms-background-size: cover;
@@ -974,4 +997,14 @@ textarea:focus {
 	background-size: cover;
 	padding: 0;
 	text-align: center;
+}
+
+.ann-img-fix {
+	position: relative;
+	top: 2px;
+}
+
+.profile-img {
+	width: 240px;
+	height: 240px;
 }

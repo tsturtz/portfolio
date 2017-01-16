@@ -38,10 +38,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-firebase-icon:before {
+.icon-angular-material:before {
   content: "\61";
 }
-.icon-angularmaterial:before {
+.icon-firebase-icon:before {
   content: "\62";
 }
 .icon-angellist:before {

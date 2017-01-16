@@ -90,7 +90,6 @@
           <div class="row">
             <div class="home-box col-xs-12">
               <div>
-                <!--<img src="images/avatar.jpg" alt="">-->
                 <h1>Hi, I'm Taylor</h1>
                 <p>I'm a Front End Web Developer</p>
               </div>
@@ -159,9 +158,9 @@
           </div>
           <!-- Photo -->
           <div class="profile-background col-xs-12 col-sm-6" data-mh="match-edu">
-            <div class="black-layer">
+            <div class="clear-layer">
               <div class="middle-content">
-                <!--TODO: ADD PHOTO-->
+                <img class="profile-img" src="images/profile-img.jpg" alt="Profile Image">
               </div>
             </div>
           </div>
@@ -192,11 +191,21 @@
                 <i class="fa fa-code"></i>
               </div>
               <div>
-                <h4><small><em>Responsive</em><br></small> Web Design</h4>
+                <h4>Web Design</h4>
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
               </div>
             </div>
             <!-- Service box 3 -->
+            <div class="service-box">
+              <div>
+                <i class="devicons devicons-database"></i>
+              </div>
+              <div>
+                <h4>Data Collection<br><small><em>& Visualization</em></small></h4>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+              </div>
+            </div>
+            <!-- Service box 4 -->
             <div class="service-box">
               <div>
                 <i class="fa fa-pencil"></i>
@@ -206,33 +215,23 @@
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
               </div>
             </div>
-            <!-- Service box 4 -->
-            <div class="service-box">
-              <div>
-                <i class="fa fa-pencil-square-o"></i>
-              </div>
-              <div>
-                <h4>Print Design</h4>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
-              </div>
-            </div>
             <!--  Service box 5 -->
             <div class="service-box">
               <div>
-                <i class="fa fa-bar-chart"></i>
+                <i class="devicons devicons-git"></i>
               </div>
               <div>
-                <h4>Data Visualization</h4>
+                <h4>Version Control</h4>
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
               </div>
             </div>
             <!-- Service box 6 -->
             <div class="service-box">
               <div>
-                <i class="fa fa-database"></i>
+                <i class="devicons devicons-scrum"></i>
               </div>
               <div>
-                <h4>Data Collection</h4>
+                <h4>Agile Workflow</h4>
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
               </div>
             </div>
@@ -252,12 +251,11 @@
                   <div class="cell center"><i class="devicon-javascript-plain"></i></div>
                   <div class="cell center"><i class="devicon-jquery-plain-wordmark"></i></div>
                   <div class="cell center"><i class="devicon-angularjs-plain"></i></div>
-                  <div class="cell center"><i class="icon icon-angularmaterial"></i></div>
-
                   <div class="cell center"><i class="icon icon-firebase-icon"></i></div>
-                  <div class="cell center"><i class="devicon-php-plain"></i></div>
+
                   <div class="cell center"><i class="devicon-photoshop-line"></i></div>
-                  <!--<div class="cell center"><i class="devicons devicons-git"></i></div>-->
+                  <div class="cell center"><i class="devicon-wordpress-plain"></i></div>
+                  <div class="cell center"><i class="devicon-php-plain"></i></div>
                   <div class="cell center"><i class="devicon-github-plain"></i></div>
                 </div>
               </div>
@@ -314,19 +312,20 @@
             </div>
           </div>
           <div class="portfolio-content col-xs-12 col-sm-6" data-mh="match-portfolio1">
-            <div class="owl-carousel portfolioSlider clear-layer">
+            <div class="owl-carousel portfolioSlider meetup-layer">
               <div>
                 <img src="images/MeetupMap-WebMock.jpg" alt="Meetup Map web app portfolio presentation">
                 <div class="image-layer">
                   <div class="image-title">
-                    <h3>Meetup Map</h3>
-                    <br>
-                    <h4>Key Technologies:</h4>
-                      <p>Materialize CSS</p>
-                      <p>JavaScript</p>
-                      <p>jQuery</p>
-                      <p>AJAX (Google Maps and Geocoding APIs, YouTube API)</p>
-                    <br>
+                    <h2>Meetup Map</h2>
+                    <ul class="fa-ul">
+                      <li><i class="fa-li devicons devicons-materializecss"></i> &nbsp;Materialize CSS</li>
+                      <li><i class="fa-li devicon-javascript-plain"></i> &nbsp;JavaScript</li>
+                      <li><i class="fa-li devicon-jquery-plain"></i> &nbsp;jQuery</li>
+                      <li><i class="fa-li fa fa-meetup"></i> &nbsp;Meetup API</li>
+                      <li><i class="fa-li fa fa-google"></i> &nbsp;Google Maps API</li>
+                      <li><i class="fa-li fa fa-youtube-play"></i> &nbsp;YouTube API</li>
+                    </ul>
                     <a href="http://www.meetup-map.com"><i class="fa fa-external-link"></i>&nbsp; Live link</a>
                     &nbsp; | &nbsp;
                     <a href="https://github.com/Xevnik/meetup_map"><i class="fa fa-github"></i>&nbsp; Github</a>
@@ -351,16 +350,6 @@
             <br>
             <p>RealValue provides an area score derived from calculating the standard deviation from each data set (average home value, violent crime frequency, job availability) and adding them together. The RealValue score is shown on a color scale and on mouse hover; the score adjusts in real-time according to user selections. On zoom, clusters of restaurants, parks, and schools are shown with individual place details on click.</p>
             <br>
-            <h4>Key Technologies:</h4>
-            <ul>
-              <li>AngularJS</li>
-              <li>Angular Material</li>
-              <li>Angular Leaflet & geoJSON</li>
-              <li>D3.js</li>
-              <li>Firebase</li>
-              <li>AJAX (Zillow API, Glassdoor API, Google Places API)</li>
-            </ul>
-            <br>
             <div class="profile-box">
               <h4>
                 <a href="http://www.realvalue.io"><i class="fa fa-external-link"></i>&nbsp; Live link</a>
@@ -373,12 +362,22 @@
           </div>
 
           <div class="portfolio-content col-xs-12 col-sm-6 col-sm-pull-6" data-mh="match-portfolio2">
-            <div class="owl-carousel portfolioSlider clear-layer">
+            <div class="owl-carousel portfolioSlider realvalue-layer">
               <div>
-                <img src="images/RealValue-WebMock.jpg" alt="Real Value web app portfolio presentation">
+                <img src="images/RealValue-WebMock-alt.jpg" alt="Real Value web app portfolio presentation">
                 <div class="image-layer">
                   <div class="image-title">
-                    <h3>Real Value</h3>
+                    <h2>Real Value LA & OC</h2>
+                    <ul class="fa-ul">
+                      <li><i class="fa-li devicon-angularjs-plain"></i> &nbsp;AngularJS</li>
+                      <li><i class="fa-li devicon-angularjs-plain"></i> &nbsp;Angular Material</li>
+                      <li><i class="fa-li fa fa-leaf"></i> &nbsp;Angular Leaflet and geoJSON</li>
+                      <li><i class="fa-li devicon-d3js-plain"></i> &nbsp;D3.js</li>
+                      <li><i class="fa-li icon icon-firebase-icon"></i> &nbsp;Firebase database</li>
+                      <li><i class="fa-li fa fa-google"></i> &nbsp;Google Places API</li>
+                      <li><i class="fa-li fa fa-home"></i> &nbsp;Zillow API</li>
+                      <li><i class="fa-li fa fa-briefcase"></i> &nbsp;Glassdoor API</li>
+                    </ul>
                     <a href="http://www.realvalue.io"><i class="fa fa-external-link"></i>&nbsp; Live link</a>
                     &nbsp; | &nbsp;
                     <a href="https://github.com/tsturtz/realvalue"><i class="fa fa-github"></i>&nbsp; Github</a>
@@ -393,71 +392,14 @@
     </section>
     <!-- end Portfolio 2 -->
 
-    <!-- Portfolio 3 -->
-    <section id="portfolio3">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="section-background col-xs-12 col-sm-6" data-mh="match-portfolio">
-            <p><em>Portfolio</em></p>
-            <h2>Ann Ackerman, Realtor</h2>
-            <p>A fully responsive website that was commissioned based on an expectation of great design. Ackerman's realtor site provides important information to visitors and increases client's confidence as they prepare to engage in multi-million dollar business transactions. Custom Wordpress child theme websites using HTML5 and CSS3, various Wordpress plugins, and some PHP.</p>
-            <br>
-            <h4>Key Technologies:</h4>
-            <ul>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>Custom Wordpress child theme</li>
-              <li>Various Wordpress plugins</li>
-              <li>PHP</li>
-            </ul>
-            <br>
-            <div class="profile-box">
-              <h4>
-                <a href="http://www.annackerman.com"><i class="fa fa-external-link"></i>&nbsp; Live link</a>
-              </h4>
-<!--              &nbsp; | &nbsp;
-              <h4>
-                <a href="https://github.com/Xevnik/meetup_map"><i class="fa fa-github"></i>&nbsp; Github</a>
-              </h4>-->
-            </div>
-          </div>
-          <div class="portfolio-content col-xs-12 col-sm-6" data-mh="match-portfolio">
-            <div class="owl-carousel portfolioSlider clear-layer">
-              <div>
-                <img src="images/AnnAckerman-WebMock.jpg" alt="Ann Ackerman website portfolio presentation">
-                <div class="image-layer">
-                  <div class="image-title">
-                    <h3>Ann Ackerman, Realtor</h3>
-                    <a href="http://www.annackerman.com"><i class="fa fa-external-link"></i>&nbsp; Live link</a>
-<!--                    &nbsp; | &nbsp;
-                    <a href="https://github.com/Xevnik/meetup_map"><i class="fa fa-github"></i>&nbsp; Github</a>-->
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div><!-- end row -->
-      </div><!-- end container -->
-    </section>
-    <!-- end Portfolio 3 -->
-
     <!-- Portfolio 4 -->
     <section id="portfolio4">
       <div class="container-fluid">
         <div class="row">
-          <div class="section-background col-xs-12 col-sm-6 col-sm-push-6" data-mh="match-portfolio">
+          <div class="section-background col-xs-12 col-sm-6" data-mh="match-portfolio">
             <p><em>Portfolio</em></p>
             <h2>Student Grade Tracker</h2>
             <p>Beyond <em>CRUD</em> operations, users are able to <strong>filter and sort</strong> students by name, course, or grade instantaneously. <strong>Form validation</strong> and popover notifications ensure proper user input. Tooltips let users know that they can <strong>edit-in-place</strong> to make changes on the fly to student records. <strong>Grade average calculations</strong> and <strong>color-scaled grading</strong> make it easy to see how well students are doing. A <strong>fully responsive</strong> layout creates great UX at every breakpoint.</p>
-            <br>
-            <h4>Key Technologies:</h4>
-            <ul>
-              <li>HTML5 & CSS3</li>
-              <li>Bootstrap</li>
-              <li><em>Originally built with</em> JavaScript & jQuery</li>
-              <li><em>Refactored in</em> AngularJS</li>
-              <li>Firebase database</li>
-            </ul>
             <br>
             <div class="profile-box">
               <h4>
@@ -470,13 +412,21 @@
             </div>
           </div>
 
-          <div class="portfolio-content col-xs-12 col-sm-6 col-sm-pull-6" data-mh="match-portfolio">
-            <div class="owl-carousel portfolioSlider clear-layer">
+          <div class="portfolio-content col-xs-12 col-sm-6" data-mh="match-portfolio">
+            <div class="owl-carousel portfolioSlider sgt-layer">
               <div>
                 <img src="images/StudentGradeTable-WebMock.jpg" alt="Student Grade Tracker web app portfolio presentation">
                 <div class="image-layer">
                   <div class="image-title">
-                    <h3>Student Grade Tracker</h3>
+                    <h2>Student Grade Tracker</h2>
+                    <ul class="fa-ul">
+                      <li><i class="fa-li devicon-html5-plain"></i> &nbsp;HTML5</li>
+                      <li><i class="fa-li devicon-css3-plain"></i> &nbsp;CSS3</li>
+                      <li><i class="fa-li devicons devicons-bootstrap"></i> &nbsp;Bootstrap</li>
+                      <li><i class="fa-li devicon-javascript-plain"></i> &nbsp;<em>Originally</em> JavaScript & jQuery</li>
+                      <li><i class="fa-li devicon-angularjs-plain"></i> &nbsp;<em>Refactored</em> AngularJS</li>
+                      <li><i class="fa-li icon icon-firebase-icon"></i> &nbsp;Firebase database</li>
+                    </ul>
                     <a href="https://tsturtz.github.io/student-grades/"><i class="fa fa-external-link"></i>&nbsp; Live link</a>
                     &nbsp; | &nbsp;
                     <a href="https://github.com/tsturtz/student-grades"><i class="fa fa-github"></i>&nbsp; Github</a>
@@ -489,6 +439,52 @@
       </div><!-- end container -->
     </section>
     <!-- end Portfolio 4 -->
+
+    <!-- Portfolio 3 -->
+    <section id="portfolio3">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="section-background col-xs-12 col-sm-6 col-sm-push-6" data-mh="match-portfolio">
+            <p><em>Portfolio</em></p>
+            <h2>Ann Ackerman, Realtor</h2>
+            <p>A fully responsive website that was commissioned based on an expectation of great design. Ackerman's realtor site provides important information to visitors and increases client's confidence as they prepare to engage in multi-million dollar business transactions.</p>
+            <br>
+            <div class="profile-box">
+              <h4>
+                <a href="http://www.annackerman.com"><i class="fa fa-external-link"></i>&nbsp; Live link</a>
+              </h4>
+<!--              &nbsp; | &nbsp;
+              <h4>
+                <a href="https://github.com/Xevnik/meetup_map"><i class="fa fa-github"></i>&nbsp; Github</a>
+              </h4>-->
+            </div>
+          </div>
+          <div class="portfolio-content col-xs-12 col-sm-6 col-sm-pull-6" data-mh="match-portfolio">
+            <div class="owl-carousel portfolioSlider ann-layer">
+              <div>
+                <img src="images/AnnAckerman-WebMock-alt.jpg" alt="Ann Ackerman website portfolio presentation" class="ann-img-fix">
+                <div class="image-layer">
+                  <div class="image-title">
+                    <h2>Ann Ackerman, Realtor</h2>
+                    <ul class="fa-ul">
+                      <li><i class="fa-li devicon-html5-plain"></i> &nbsp;HTML</li>
+                      <li><i class="fa-li devicon-css3-plain"></i> &nbsp;CSS</li>
+                      <li><i class="fa-li devicons devicons-wordpress"></i> &nbsp;Custom Wordpress child theme</li>
+                      <li><i class="fa-li devicons devicons-wordpress"></i> &nbsp;Various Wordpress plugins</li>
+                      <li><i class="fa-li devicon-php-plain"></i> &nbsp;PHP</li>
+                    </ul>
+                    <a href="http://www.annackerman.com"><i class="fa fa-external-link"></i>&nbsp; Live link</a>
+<!--                    &nbsp; | &nbsp;
+                    <a href="https://github.com/Xevnik/meetup_map"><i class="fa fa-github"></i>&nbsp; Github</a>-->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- end row -->
+      </div><!-- end container -->
+    </section>
+    <!-- end Portfolio 3 -->
 
     <!-- Education -->
     <section id="education">

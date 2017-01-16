@@ -407,4 +407,10 @@
 	.facts-background .black-layer {
 		padding: 40px 20px;
 	}
+	.image-title h2 {
+		font-size: 14px;
+	}
+	.image-title ul {
+		font-size: 10px;
+	}
 }
