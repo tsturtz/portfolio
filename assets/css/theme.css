@@ -989,7 +989,7 @@ textarea:focus {
 }
 
 .profile-background {
-	background: url("../images/foosball-light-blur.jpg") no-repeat;
+	background: url("../images/foosball-bw-blur.jpg") no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-ms-background-size: cover;
