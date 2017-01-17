@@ -38,12 +38,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-angular-material:before {
-  content: "\61";
+.icon-angular-material-1:before {
+  content: "\64";
 }
 .icon-firebase-icon:before {
-  content: "\62";
+  content: "\61";
 }
 .icon-angellist:before {
-  content: "\63";
+  content: "\62";
 }

@@ -92,7 +92,7 @@ p,
 	height: 100%;
 }
 .white-layer {
-	background: rgba(255, 255, 255, 0.9);
+	background: rgba(255, 255, 255, 0.8);
 }
 .black-layer {
 	background: rgba(0, 0, 0, 0.5);
@@ -683,8 +683,13 @@ textarea {
 	color: #fff;
 }
 
-.devicons-bootstrap, .devicon-php-plain, .devicons-materializecss, .icon-angularmaterial {
+.devicons-bootstrap, .devicon-php-plain, .devicons-materializecss {
 	font-size: 95px;
+}
+
+.icon-angular-material-1, .icon-firebase-icon {
+	font-size: 85px;
+	line-height: .8;
 }
 
 .center {
@@ -976,7 +981,7 @@ textarea:focus {
 }
 
 .profile-box p {
-	margin-bottom: 10px;
+	margin-bottom: 5px;
 }
 
 .profile-box a {
