@@ -405,9 +405,9 @@
 	.cell:nth-child(3), .cell:nth-child(4), .cell:nth-child(11) {
 		padding: 0;
 	}
-	.devicons-bootstrap, .devicon-php-plain, .devicons-materializecss, .icon-angularmaterial {
+	.devicons-bootstrap, .devicon-php-plain, .devicons-materializecss, .icon-angular-material-1, .icon-firebase-icon {
 		height: 10%;
-		font-size: 65px;
+		font-size: 55px;
 		padding: 0;
 	}
 	.facts-background .black-layer {
@@ -419,7 +419,7 @@
 	.image-title ul {
 		font-size: 10px;
 	}
-	.profile-img {
-		margin: 30px 0;
-	}
+	/*.profile-img {
+		margin: 20px 0;
+	}*/
 }

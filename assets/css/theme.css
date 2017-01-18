@@ -293,7 +293,7 @@ textarea {
 	position: relative;
 	top: 0;
 	left: 0;
-	background: url("../images/dark-guyatdesk-blur.jpg") no-repeat top center fixed;
+	background: url("../images/dark-guyatdesk.jpg") no-repeat top center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-ms-background-size: cover;
@@ -971,20 +971,16 @@ textarea:focus {
 	text-decoration: none;
 }
 
-.profile-box {
-	height: 50px;
-}
-
 .profile-box h4 {
 	display: inline;
 	border-bottom: none;
 }
 
-.profile-box p {
+.profile-box p, .profile-p {
 	margin-bottom: 5px;
 }
 
-.profile-box a {
+.profile-box a, .profile-contact a {
 	text-decoration: none;
 	color: rgb(150,150,150);
 }
@@ -1012,4 +1008,56 @@ textarea:focus {
 .profile-img {
 	width: 240px;
 	height: 240px;
+}
+
+.terminal-hire {
+	font-family: 'Inconsolata', monospace;
+}
+
+.terminal-green {
+	color: limegreen;
+}
+
+.terminal-yellow {
+	color: yellow;
+}
+
+.blink-text {
+	/*font-size: 20px;*/
+
+	-webkit-animation-name: blinker;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+
+	-moz-animation-name: blinker;
+	-moz-animation-duration: 1s;
+	-moz-animation-timing-function: linear;
+	-moz-animation-iteration-count: infinite;
+
+	animation-name: blinker;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+@-moz-keyframes blinker {
+	0% { opacity: 0.0; }
+	49% { opacity: 0.0; }
+	50% { opacity: 1.0; }
+	100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes blinker {
+	0% { opacity: 0.0; }
+	49% { opacity: 0.0; }
+	50% { opacity: 1.0; }
+	100% { opacity: 1.0; }
+}
+
+@keyframes blinker {
+	0% { opacity: 0.0; }
+	49% { opacity: 0.0; }
+	50% { opacity: 1.0; }
+	100% { opacity: 1.0; }
 }
