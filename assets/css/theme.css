@@ -116,7 +116,7 @@ p,
 	background-color: #3a889f;
 }
 .todo-layer {
-	background-color: #3a889f;
+	background-color: #afafaf;
 }
 
 
@@ -302,7 +302,7 @@ textarea {
 	position: relative;
 	top: 0;
 	left: 0;
-	background: url("../images/dark-guyatdesk.jpg") no-repeat top center fixed;
+	background: url("../images/monitors-original.jpg") no-repeat top center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-ms-background-size: cover;
@@ -318,7 +318,7 @@ textarea {
 }
 
 .home-box {
-	/*background: rgba(0, 0, 0, 0.8);*/
+	background: rgba(0, 0, 0, 0.8);
 	height: 100%;
 	padding: 0;
 	color: #fff;
@@ -384,7 +384,7 @@ textarea {
 }
 
 .social i {
-	font-size: 18px;
+	font-size: 14px;
 	line-height: 28px;
 }
 
@@ -705,16 +705,49 @@ textarea {
 	height: 32%;
 	margin-bottom: 5px;
 	display: flex;
-	font-size: 80px;
-	color: #fff;
 }
 
+.cell i {
+	font-size: 55px;
+	color: #fff;
+	text-shadow: 3px 3px 15px #000;
+	transition: .5s;
+	-ms-transform: translateY(50px);
+	-webkit-transform: translateY(50px);
+	transform: translateY(50px);
+	opacity: 0;
+}
+
+.cell i.animate {
+	opacity: 1;
+	-ms-transform: translateY(0px);
+	-webkit-transform: translateY(0px);
+	transform: translateY(0px);
+}
+
+.cell i.animate:hover {
+	transform: scale(1.1);
+}
+
+.cell i.html5:hover {color: #f16529;}
+.cell i.css3:hover {color: #0270bb;}
+.cell i.boot:hover {color: #563d7c;}
+.cell i.mat:hover {color: #ee6e73;}
+.cell i.js:hover {color: #ebc825;}
+.cell i.jq:hover {color: #4155a5;}
+.cell i.ng:hover {color: #e43137;}
+.cell i.md:hover {color: #e43137;}
+.cell i.ps:hover {color: #9cd1fd;}
+.cell i.fb:hover {color: #ffcb2d;}
+.cell i.php:hover {color: #6c7eb7;}
+.cell i.gh:hover {color: #555555;}
+
 .devicons-bootstrap, .devicon-php-plain, .devicons-materializecss {
-	font-size: 95px;
+	font-size: 70px;
 }
 
 .icon-angular-material-1, .icon-firebase-icon {
-	font-size: 85px;
+	font-size: 65px;
 	line-height: .8;
 }
 
@@ -983,13 +1016,14 @@ textarea:focus {
 }
 
 .col-right i {
-	font-size: 16px;
+	font-size: 14px;
 	line-height: 28px;
 }
 
-.social a i.icon-angellist {
-	font-size: 15px;
-	line-height: 28px;
+.social a i.icon-angellist, .col-right a i.icon-angellist {
+	font-size: 13px;
+	position: relative;
+	top: 1px;
 }
 
 .footer-background a:hover {

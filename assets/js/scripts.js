@@ -263,4 +263,11 @@ $(function() {
 
   ===============================================*/
 
+  $(".cell i").each(function() {
+    var $this = $(this);
+    $this.appear(function() {
+      $this.addClass('animate');
+    });
+  });
+
 });
