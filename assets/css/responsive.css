@@ -306,7 +306,7 @@
 	.home-background, 
 	.skills-background, 
 	.hire-background, 
-	.facts-background, 
+	.facts-background,
 	.clients-background {
 		background-attachment: scroll;
 		background-position: top center !important;
