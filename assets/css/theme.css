@@ -87,7 +87,7 @@ p,
 	padding: 80px 60px;
 }
 
-.white-layer, .white-layer-2, .black-layer, .gold-layer, .clear-layer, .meetup-layer, .realvalue-layer, .ann-layer, .sgt-layer, .todo-layer {
+.white-layer, .white-layer-2, .black-layer, .navy-layer, .gold-layer, .clear-layer, .meetup-layer, .realvalue-layer, .ann-layer, .sgt-layer, .todo-layer {
 	width: 100%;
 	height: 100%;
 }
@@ -102,6 +102,9 @@ p,
 }
 .gold-layer {
 	background: rgba(255, 239, 184, 0.2);
+}
+.navy-layer {
+	background: rgba(87, 103, 122, 0.4);
 }
 .realvalue-layer {
 	background-color: #4b4b4b;
@@ -302,7 +305,7 @@ textarea {
 	position: relative;
 	top: 0;
 	left: 0;
-	background: url("../images/monitors-bw.jpg") no-repeat top center fixed;
+	background: url("../images/monitors-bw-blur.jpg") no-repeat top center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-ms-background-size: cover;
@@ -322,8 +325,8 @@ textarea {
 	background: -webkit-linear-gradient(rgba(56, 52, 0, 0.8), rgba(45, 0, 49, 0.8)); /* For Safari 5.1 to 6.0 */
 	background: -o-linear-gradient(rgba(56, 52, 0, 0.8), rgba(45, 0, 49, 0.8)); /* For Opera 11.1 to 12.0 */
 	background: -moz-linear-gradient(rgba(56, 52, 0, 0.8), rgba(45, 0, 49, 0.8)); /* For Firefox 3.6 to 15 */
-	background: linear-gradient(rgba(56, 52, 0, 0.8), rgba(45, 0, 49, 0.8)); /* Standard syntax */
-	/*background: rgba(0, 0, 0, 0.8);*/
+	background: linear-gradient(rgba(34, 40, 49, 0.4), rgba(0, 0, 0, 0.8)); /* Standard syntax */
+	background: rgba(35, 41, 49, 0.8);
 	height: 100%;
 	padding: 0;
 	color: #fff;
@@ -715,7 +718,7 @@ textarea {
 .cell i {
 	font-size: 55px;
 	color: #fff;
-	text-shadow: 3px 3px 15px #000;
+	text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.3);
 	transition: .5s;
 	-ms-transform: translateY(50px);
 	-webkit-transform: translateY(50px);
@@ -731,7 +734,7 @@ textarea {
 }
 
 .cell i.animate:hover {
-	transform: scale(1.1);
+	transform: scale(1.03);
 }
 
 .cell i.html5:hover {color: #f16529;}
