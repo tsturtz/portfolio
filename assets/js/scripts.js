@@ -31,9 +31,9 @@ $(function() {
   var windowWidth = $(window).width();
 
   $(document).ready(function(e) {
-    $(".menu li a, .hire-background a, #hire, #profile-contact-link").on("click", function(e) {
+    $(".menu li a, .hire-background a, #shout").on("click", function(e) {
       if (windowWidth >= 768) {
-        htmlBody.animate({scrollTop: $(this.hash).offset().top - 50}, 800, "easeInOutQuart");  
+        htmlBody.animate({scrollTop: $(this.hash).offset().top - 0}, 800, "easeInOutQuart");
       }
       if (windowWidth <= 767) {
         htmlBody.animate({scrollTop: $(this.hash).offset().top - 0}, 800, "easeInOutQuart");
