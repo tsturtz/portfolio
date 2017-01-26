@@ -92,7 +92,7 @@ p,
 	height: 100%;
 }
 .white-layer {
-	background: rgba(255, 255, 255, 0.85);
+	background: rgba(255, 255, 255, 0.5);
 }
 .white-layer-2 {
 	background: rgba(255, 255, 255, 0.2);
@@ -122,9 +122,7 @@ p,
 	background-color: #afafaf;
 }
 
-
-
-.profile-box a,
+.link-box h4,
 .toggle-btn, 
 .lines::before, 
 .lines::after, 
@@ -321,11 +319,6 @@ textarea {
 }
 
 .home-box {
-	background: rgba(0, 0, 0, 0.8); /* For browsers that do not support gradients */
-	background: -webkit-linear-gradient(rgba(56, 52, 0, 0.8), rgba(45, 0, 49, 0.8)); /* For Safari 5.1 to 6.0 */
-	background: -o-linear-gradient(rgba(56, 52, 0, 0.8), rgba(45, 0, 49, 0.8)); /* For Opera 11.1 to 12.0 */
-	background: -moz-linear-gradient(rgba(56, 52, 0, 0.8), rgba(45, 0, 49, 0.8)); /* For Firefox 3.6 to 15 */
-	background: linear-gradient(rgba(34, 40, 49, 0.4), rgba(0, 0, 0, 0.8)); /* Standard syntax */
 	background: rgba(35, 41, 49, 0.8);
 	height: 100%;
 	padding: 0;
@@ -473,7 +466,7 @@ textarea {
 	6. Hire me
 -------------------------------------------------*/
 .hire-background {
-	background: url("../images/paperwork.jpg") no-repeat;
+	background: url("../images/laptop-light.jpg") no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-ms-background-size: cover;
@@ -533,6 +526,20 @@ textarea {
 	padding: 0;
 }
 
+.slide-right {
+	opacity: 0;
+	transition: ease-out 1s;
+}
+
+.slide-left {
+	opacity: 0;
+	transition: ease-out 1s;
+}
+
+.slide-in {
+	opacity: 1;
+}
+
 .portfolio-content img {
 	width: 100%;
 }
@@ -585,7 +592,7 @@ textarea {
 
 .image-title a {
 	position: relative;
-	padding: 1px 0;
+	padding: 2px 0;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 	color: rgba(255, 255, 255, 0.7);
 	text-transform: uppercase;
@@ -671,10 +678,6 @@ textarea {
 	padding-left: 70px;
 }
 
-.service-box h4 {
-	margin-top: 0;
-}
-
 .service-box i {
 	color: rgb(20, 20, 20);
 	font-size: 18px;
@@ -690,7 +693,7 @@ textarea {
 	9. Facts / Tech
 -------------------------------------------------*/
 .facts-background, .tech-background {
-	background: url("../images/laptop.jpg") no-repeat;
+	background: url("../images/code.jpg") no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-ms-background-size: cover;
@@ -713,6 +716,15 @@ textarea {
 	height: 32%;
 	margin-bottom: 5px;
 	display: flex;
+}
+
+.devicons-bootstrap, .devicon-php-plain, .devicons-materializecss {
+	font-size: 70px;
+}
+
+.icon-angular-material-1, .icon-firebase-icon {
+	font-size: 65px;
+	line-height: .8;
 }
 
 .cell i {
@@ -749,15 +761,6 @@ textarea {
 .cell i.fb:hover {color: #ffcb2d;}
 .cell i.php:hover {color: #6c7eb7;}
 .cell i.gh:hover {color: #555555;}
-
-.devicons-bootstrap, .devicon-php-plain, .devicons-materializecss {
-	font-size: 70px;
-}
-
-.icon-angular-material-1, .icon-firebase-icon {
-	font-size: 65px;
-	line-height: .8;
-}
 
 .center {
 	align-items: center;
@@ -1039,33 +1042,8 @@ textarea:focus {
 	text-decoration: none;
 }
 
-.profile-box h4 {
-	display: inline;
-	border-bottom: none;
-}
-
-.profile-box p, .profile-p {
-	margin-bottom: 5px;
-}
-
-.profile-box a, .profile-contact a {
-	text-decoration: none;
-	color: rgb(150,150,150);
-}
-
-.profile-box a:hover {
-	color: rgb(20,20,20) !important;
-}
-
-.profile-background {
-	background: url("../images/foosball-bw.jpg") no-repeat;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-ms-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	padding: 0;
-	text-align: center;
+a:hover {
+	text-decoration: none !important;
 }
 
 .ann-img-fix {
@@ -1094,9 +1072,30 @@ textarea:focus {
 	color: yellow;
 }
 
-.blink-text {
-	/*font-size: 20px;*/
+.link-box {
+	font-size: 14px;
+	color: rgb(150,150,150);
+}
 
+.link-box h4 {
+	color: rgb(112, 136, 196);
+	display: inline;
+}
+
+.link-box h4:hover {
+	color: rgb(73, 94, 140);
+}
+
+.link-box i.fa-github, i.bigger {
+	font-size: 13px;
+}
+
+.divider {
+	margin: 60px auto;
+	width: 40%;
+}
+
+.blink-text {
 	-webkit-animation-name: blinker;
 	-webkit-animation-duration: 1s;
 	-webkit-animation-timing-function: linear;
