@@ -43,44 +43,6 @@ $(function() {
   });
 
   /*===============================================
-    Circular Progress bar
-  ===============================================*/
-  $(".dial").knob({
-    'width': '100',
-    'height': '100',
-    'thickness': .03,
-    'fgColor': 'rgb(255, 255, 255)',
-    'bgColor': 'rgba(255, 255, 255, .0)',
-    'inputColor': 'rgb(255, 255, 255)',
-    'readOnly': true,
-    'font': 'Open Sans',
-    'fontWeight': "300",
-      parse: function (v) {return parseInt(v, 10);},
-      format: function (v) {return v + "%";}
-  });
-
-  /*===============================================
-    Circular Progress bar Animate when visible
-  ===============================================*/
-  $(".dial").each(function () {
-    var $this = $(this);
-    var myVal = $this.data("number");
-    $(".skill-bar").appear(function() {
-      $({
-        value: 0
-      }).animate({
-        value: myVal,
-      }, {
-        duration: 2000,
-        easing: 'swing',
-        step: function () {
-          $this.val(Math.ceil(this.value)).trigger('change');
-        }
-      })
-    },{accX: 0, accY: -10});
-  });
-
-  /*===============================================
     Contact Form
   ===============================================*/
   $("#contactform").on('submit',function(e) {
@@ -128,48 +90,6 @@ $(function() {
   });
 
   /*===============================================
-    Counter
-  ===============================================*/
-  $(".facts-background [data-to]").each(function() {
-    var $this = $(this);
-    $this.appear(function() {
-      $this.countTo({
-        speed: 1500,
-        onComplete: function() {
-          if($this.data("append")) {
-            $this.html($this.html() + $this.data("append"));
-          }
-        }
-      });
-    }, {accX: 0, accY: -10});
-  });
-
-  /*===============================================
-    Owl Carousel
-  ===============================================*/
-  $(".portfolioSlider").owlCarousel({
-    slideSpeed: 400,
-    paginationSpeed: 400,
-    rewindSpeed: 800,
-    singleItem: true
-  });
-
-  $("#clientSlider").owlCarousel({
-    items: 3,
-    itemsDesktop: [1199,3],
-    itemsDesktopSmall: [979,2],
-    itemsTablet: [768,1],
-    itemsMobile: [479,1],
-    autoPlay: 2000, // 2 seconds
-    stopOnHover: true,
-    pagination: false,
-    slideSpeed: 400,
-    paginationSpeed: 400,
-    rewindSpeed: 800,
-    singleItem: false
-  });
-
-  /*===============================================
     Google Maps
   ===============================================*/
   var markerIcon = "images/marker.png";
@@ -202,21 +122,6 @@ $(function() {
   ===============================================*/
   var menu = $(".menu");
   var toggleBtn = $(".toggle-btn");
-
-/*  // Open menu midway down the page on large viewport only
-  if (windowWidth > 770) {
-    $('#experience').appear(function() {
-      menu.addClass("show-menu");
-      toggleBtn.addClass("toggle-close");
-    });
-    $(window).on('scroll', function(e) {
-      if ($(this).scrollTop() == 0) {
-        menu.removeClass("show-menu");
-        toggleBtn.removeClass("toggle-close");
-      }
-      e.stopPropagation();
-    });
-  }*/
 
   // Show/hide menu on click
   toggleBtn.on("click", function(e) {
@@ -252,32 +157,31 @@ $(function() {
   }
 
   /*===============================================
-
+    Appear elements on scroll
   ===============================================*/
 
-  $(".cell i").each(function() {
-    var $this = $(this);
-    $this.appear(function() {
-        $this.addClass('animate');
+    $(".cell i").each(function() {
+        var $this = $(this);
+        $this.appear(function() {
+            $this.addClass('animate');
+        });
     });
-  });
 
-  $(".slide .portfolio-content").each(function() {
-    var $this = $(this);
-    $this.appear(function() {
-        console.log($this);
-      $this.addClass('slide-in');
+    $(".slide .portfolio-content").each(function() {
+        var $this = $(this);
+        $this.appear(function() {
+            $this.addClass('slide-in');
+        });
     });
-  });
 
-  $(".myemail").appear(function() {
-    var email = $('<span>').text('taylorsturtz@gmail.com');
-    $(this).append(email);
-  });
+    $(".myemail").appear(function() {
+        var email = $('<span>').text('taylorsturtz@gmail.com');
+        $(this).append(email);
+    });
 
-  $(".myphone").appear(function() {
-      var phone = $('<span>').text('(949) 500-3960');
-      $(this).append(phone);
-  });
+    $(".myphone").appear(function() {
+        var phone = $('<span>').text('(949) 500-3960');
+        $(this).append(phone);
+    });
 
 });

@@ -2,11 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"              content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!--Site info-->
     <meta name="description"           content="Taylor Sturtz Web Development Portfolio">
     <meta name="keywords"              content="developer, web developer, web development, web design, javascript, taylor, front-end, front end, orange county, LA, angular, programmer, engineer">
     <meta name="author"                content="Taylor Sturtz">
 
-    <!--Social Media-->
+    <!--Social media sharing-->
     <meta property="og:url"            content="http://www.taylorsturtz.com">
     <meta property="og:type"           content="profile">
     <meta property="og:title"          content="Taylor Sturtz Web Development Portfolio">
@@ -14,9 +18,13 @@
     <meta property="og:image"          content="http://www.taylorsturtz.com/images/portfolio_snapshot.jpg">
     <meta name="twitter:card"          content="summary_large_image">
 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport"              content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!--Set browser colors for mobile and fullscreen for apple-->
+    <meta name="theme-color" content="#000000">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
     <title>Taylor Sturtz | Front End Web Developer</title>
+
     <!-- Favicon -->
     <link rel="shortcut icon" href="images/guyfavicon.png">
     <!-- ===== STYLESHEETS ===== -->
@@ -264,7 +272,6 @@
               <div>
                 <h4>Agile Workflow</h4>
                 <p>I thrive on flexible teams that practice scrums, sprints, and stand-ups to review and reevaluate.</p>
-                <!--<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>-->
               </div>
             </div>
             <!-- end Service box 6 -->
@@ -274,12 +281,12 @@
     </section>
     <!-- end Services -->
 
-    <!-- Portfolio 1 -->
-    <section id="portfolio1" class="slide">
+    <!-- Portfolio Meetup Map -->
+    <section id="portfolio-meetupmap" class="slide">
       <div class="container-fluid">
         <div class="row">
-          <div class="portfolio-content slide-left col-xs-12 col-sm-6 col-sm-push-6" data-mh="match-portfolio1">
-            <div class="owl-carousel portfolioSlider meetup-layer">
+          <div class="portfolio-content slide-left col-xs-12 col-sm-6 col-sm-push-6" data-mh="match-portfolio-meetupmap">
+            <div class="meetup-layer">
               <div>
                 <img src="images/MeetupMap-WebMock.jpg" alt="Meetup Map web app portfolio presentation">
                 <div class="image-layer">
@@ -301,7 +308,7 @@
               </div>
             </div>
           </div>
-          <div class="section-background col-xs-12 col-sm-6 col-sm-pull-6" data-mh="match-portfolio1">
+          <div class="section-background col-xs-12 col-sm-6 col-sm-pull-6" data-mh="match-portfolio-meetupmap">
             <p><em>Web Application</em></p>
             <h2>Meetup Map</h2>
             <p>A modern responsive web application that allows users to search for upcoming meetup events based on location and interest. Results are displayed on a map and listed so that users can click to view detailed information and supplementary YouTube videos.</p>
@@ -319,14 +326,14 @@
         </div><!-- end row -->
       </div><!-- end container -->
     </section>
-    <!-- end Portfolio 1 -->
+    <!-- end Portfolio Meetup Map -->
 
-    <!-- Portfolio 2 -->
-    <section id="portfolio2" class="slide">
+    <!-- Portfolio Ann -->
+    <section id="portfolio-ann" class="slide">
       <div class="container-fluid">
         <div class="row">
-          <div class="portfolio-content slide-right col-xs-12 col-sm-6" data-mh="match-portfolio">
-            <div class="owl-carousel portfolioSlider ann-layer">
+          <div class="portfolio-content slide-right col-xs-12 col-sm-6" data-mh="match-portfolio-ann">
+            <div class="ann-layer">
               <div>
                 <img src="images/AnnAckerman-WebMock-alt.jpg" alt="Ann Ackerman website portfolio presentation" class="ann-img-fix">
                 <div class="image-layer">
@@ -345,7 +352,7 @@
               </div>
             </div>
           </div>
-          <div class="section-background col-xs-12 col-sm-6" data-mh="match-portfolio">
+          <div class="section-background col-xs-12 col-sm-6" data-mh="match-portfolio-ann">
             <p><em>Business Website</em></p>
             <h2>Ann Ackerman, Realtor</h2>
             <p>A fully responsive website that was commissioned based on an expectation of great design. Ackerman's realtor site provides important information to visitors and increases client's confidence as they prepare to engage in multi-million dollar business transactions.</p>
@@ -359,14 +366,14 @@
         </div><!-- end row -->
       </div><!-- end container -->
     </section>
-    <!-- end Portfolio 2 -->
+    <!-- end Portfolio Ann -->
 
-    <!-- Portfolio 3 -->
-    <section id="portfolio3" class="slide">
+    <!-- Portfolio Todo -->
+    <section id="portfolio-todo" class="slide">
       <div class="container-fluid">
         <div class="row">
-          <div class="portfolio-content slide-left col-xs-12 col-sm-6 col-sm-push-6" data-mh="match-portfolio5">
-            <div class="owl-carousel portfolioSlider todo-layer">
+          <div class="portfolio-content slide-left col-xs-12 col-sm-6 col-sm-push-6" data-mh="match-portfolio-todo">
+            <div class="todo-layer">
               <div>
                 <img src="images/TodoForYou-WebMock.jpg" alt="Todo For You web app portfolio presentation">
                 <div class="image-layer">
@@ -387,7 +394,7 @@
               </div>
             </div>
           </div>
-          <div class="section-background col-xs-12 col-sm-6 col-sm-pull-6" data-mh="match-portfolio5">
+          <div class="section-background col-xs-12 col-sm-6 col-sm-pull-6" data-mh="match-portfolio-todo">
             <p><em>Web Application</em></p>
             <h2>Todo For You</h2>
             <p>A <strong>fully responsive</strong> to-do list application with personalized lists following Google's material design paradigm. Data is synchronized through <strong>AngularFire three-way data-binding</strong> and <strong>authentication through Google or email/password</strong> allows users to create personalized lists that users can access at any time. Logged in users can <strong>add tasks, edit, delete, set and update due dates, and mark as completed.</strong> They can also delete their account and use the <strong>'forgot password' email reset</strong> option. Tooltips and <strong>title/instruction cards provide great UX</strong> when no user is logged in or when the user's list is empty.</p>
@@ -405,14 +412,14 @@
         </div><!-- end row -->
       </div><!-- end container -->
     </section>
-    <!-- end Portfolio 3 -->
+    <!-- end Portfolio Todo -->
 
-    <!-- Portfolio 4 -->
-    <section id="portfolio4" class="slide">
+    <!-- Portfolio RealValue -->
+    <section id="portfolio-realvalue" class="slide">
       <div class="container-fluid">
         <div class="row">
-          <div class="portfolio-content slide-right col-xs-12 col-sm-6" data-mh="match-portfolio2">
-            <div class="owl-carousel portfolioSlider realvalue-layer">
+          <div class="portfolio-content slide-right col-xs-12 col-sm-6" data-mh="match-portfolio-realvalue">
+            <div class="realvalue-layer">
               <div>
                 <img src="images/RealValue-WebMock-alt.jpg" alt="Real Value web app portfolio presentation">
                 <div class="image-layer">
@@ -436,7 +443,7 @@
               </div>
             </div>
           </div>
-          <div class="section-background col-xs-12 col-sm-6" data-mh="match-portfolio2">
+          <div class="section-background col-xs-12 col-sm-6" data-mh="match-portfolio-realvalue">
             <p><em>Web Application</em></p>
             <h2>Real Value LA & OC</h2>
             <p>A dynamic web app for visualizing data across Los Angeles and Orange counties. Users who are looking to relocate or are just curious about their surroundings will benefit from the data presented.</p>
@@ -456,14 +463,14 @@
         </div><!-- end row -->
       </div><!-- end container -->
     </section>
-    <!-- end Portfolio 4 -->
+    <!-- end Portfolio RealValue -->
 
-    <!-- Portfolio 5 -->
-    <section id="portfolio5" class="slide">
+    <!-- Portfolio SGT -->
+    <section id="portfolio-sgt" class="slide">
       <div class="container-fluid">
         <div class="row">
-          <div class="portfolio-content slide-left col-xs-12 col-sm-6 col-sm-push-6" data-mh="match-portfolio">
-            <div class="owl-carousel portfolioSlider sgt-layer">
+          <div class="portfolio-content slide-left col-xs-12 col-sm-6 col-sm-push-6" data-mh="match-portfolio-sgt">
+            <div class="sgt-layer">
               <div>
                 <img src="images/StudentGradeTable-WebMock.jpg" alt="Student Grade Tracker web app portfolio presentation">
                 <div class="image-layer">
@@ -484,7 +491,7 @@
               </div>
             </div>
           </div>
-          <div class="section-background col-xs-12 col-sm-6 col-sm-pull-6" data-mh="match-portfolio">
+          <div class="section-background col-xs-12 col-sm-6 col-sm-pull-6" data-mh="match-portfolio-sgt">
             <p><em>Web Application</em></p>
             <h2>Student Grade Tracker</h2>
             <p>Beyond <em>CRUD</em> operations, users are able to <strong>filter and sort</strong> students by name, course, or grade instantaneously. <strong>Form validation</strong> and popover notifications ensure proper user input. Tooltips let users know that they can <strong>edit-in-place</strong> to make changes on the fly to student records. <strong>Grade average calculations</strong> and <strong>color-scaled grading</strong> make it easy to see how well students are doing. A <strong>fully responsive</strong> layout creates great UX at every breakpoint.</p>
@@ -502,7 +509,7 @@
         </div><!-- end row -->
       </div><!-- end container -->
     </section>
-    <!-- end Portfolio 5 -->
+    <!-- end Portfolio SGT -->
 
     <!-- Contact -->
     <section id="contact">
