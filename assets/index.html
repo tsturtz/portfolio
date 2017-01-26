@@ -529,17 +529,20 @@
             <form method="post" id="contactform">
               <div class="input-style">
                 <input type="text" id="name" name="name" placeholder="Name">
+                <span id="name_error">Please provide your name.</span>
               </div>
               <div class="input-style">
                 <input type="email" id="email" name="email" placeholder="E-Mail">
+                <span id="email_error">Email address was formatted badly.</span>
               </div>
               <div class="text-style">
                 <textarea name="message" id="message" placeholder="Message"></textarea>
+                <span id="msg_error">Please provide a message.</span>
               </div>
-              <button type="submit" id="submit" class="submit-style" name="submit" value="Send Message"><i class="fa fa-paper-plane"></i>&nbsp; Send Message</button>
+              <button type="button" id="submit" class="submit-style" name="submit" value="Send Message"><i class="fa fa-paper-plane"></i>&nbsp; Send Message</button>
               <div class="submit-result">
-                <p id="success">Your Message has been sent!</p>
-                <p id="error">Something went wrong, go back and try again!</p>
+                <p id="success"><i class="fa fa-check"></i> Your Message has been sent!</p>
+                <p id="error"><i class="fa fa-times"></i> Oops, looks like there was a server error. Please email me!</p>
               </div>
             </form>
           </div>

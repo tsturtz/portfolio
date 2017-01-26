@@ -45,36 +45,79 @@ $(function() {
   /*===============================================
     Contact Form
   ===============================================*/
-  $("#contactform").on('submit',function(e) {
+  $("#submit").on('click',function(e) {
+
+    //Remove message from any previous submission attempt
+    $("#success").fadeOut(500, 'swing');
+    $("#error").fadeOut(500, 'swing');
+
+    //Input values
     var name = $("#name").val();
     var email = $("#email").val();
     var message = $("#message").val();
-    if (name == '') {
-      $("#name").css('border-color','rgba(255, 0, 0, 0.7)');
+
+    //Initiate validation variables
+    var emailValidate = email.match(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/g);
+    var nameValid = false;
+    var emailValid = false;
+    var msgValid = false;
+
+    //Name input validation
+    if (name.length === 0) {
+        $("#name").removeClass('success').addClass('err');
+        $("#name_error").fadeIn(500, 'swing');
+    } else {
+        $("#name").removeClass('err').addClass('success');
+        $("#name_error").fadeOut(0);
+        nameValid = true;
     }
-    if (email == '') {
-      $("#email").css('border-color','rgba(255, 0, 0, 0.7)');
+
+    //Email input validation
+    if (emailValidate === null || email.length === 0) {
+        $("#email").removeClass('success').addClass('err');
+        $("#email_error").fadeIn(500, 'swing');
+    } else {
+        $("#email").removeClass('err').addClass('success');
+        $("#email_error").fadeOut(0);
+        emailValid = true;
     }
-    if (message == '') {
-      $("#message").css('border-color','rgba(255, 0, 0, 0.7)');
+
+    //Message input validation
+    if (message.length === 0) {
+        $("#message").removeClass('success').addClass('err');
+        $("#msg_error").fadeIn(500, 'swing');
+    } else {
+        $("#message").removeClass('err').addClass('success');
+        $("#msg_error").fadeOut(0);
+        msgValid = true;
     }
-    else {
-      $.ajax({
-        url:'contact_form.php',
-        data:$(this).serialize(),
-        type:'POST',
-        success:function(data){
-          $("#success").show().fadeIn(1000); //=== Show Success Message==
-          $('#contactform').each(function(){
-            this.reset();
-          });
-        },
-        error:function(data){
-          $("#error").show().fadeIn(1000); //===Show Error Message====
-        }
-      });
+
+    //AJAX call to php mailer if all fields are validated
+    if (nameValid && emailValid && msgValid) {
+        //Prepare object to send to php mailer
+        var data = {name: name, email: email, message: message};
+        $.ajax({
+            url: 'contact_form.php',
+            data: data,
+            type: 'POST',
+            success: function (data) {
+                console.info(data);
+                $("#name, #email, #message").removeClass('success');
+                $("#success").fadeIn(500, 'swing');
+                $('#contactform').each(function () {
+                    this.reset();
+                });
+            },
+            error: function (data) {
+                console.warn(data);
+                $("#name, #email, #message").removeClass('success');
+                $("#error").fadeIn(500, 'swing');
+            }
+        });
+        //Prevent page refresh
+        e.preventDefault();
     }
-    e.preventDefault(); //=== To Avoid Page Refresh and Fire the Event "Click"===
+
   });
 
   /*===============================================

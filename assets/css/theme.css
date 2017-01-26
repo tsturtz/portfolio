@@ -891,10 +891,13 @@ textarea {
 }
 
 .input-style {
+	position: relative;
 	margin-bottom: 20px;
+	z-index: 5;
 }
 
 .text-style {
+	position: relative;
 	width: 100%;
 	margin-bottom: 20px;
 }
@@ -909,7 +912,7 @@ input, textarea {
 }
 
 textarea {
- 	height: 150px;
+ 	height: 100px;
 }
 
 .input-style input, 
@@ -951,13 +954,32 @@ textarea:focus {
 #success {
 	display: none;
 	padding-top: 20px;
-	color: #419873;
+	color: green;
 }
 
 #error {
 	display: none;
 	padding-top: 20px;
 	color: red;
+}
+
+#name_error, #email_error, #msg_error {
+	position: absolute;
+	bottom: -17px;
+	display: none;
+	color: red;
+	font-size: 10px;
+}
+
+#msg_error {
+	bottom: -12px;
+}
+
+.err {
+	border-color: rgba(255, 0, 0, 0.7);
+}
+.success {
+	border-color: rgba(0, 165, 22, 0.7);
 }
 
 .google-maps {
