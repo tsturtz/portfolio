@@ -749,18 +749,52 @@ textarea {
 	transform: scale(1.03);
 }
 
+.cell i.html5::after,
+.cell i.css3::after,
+.cell i.boot::after,
+.cell i.mat::after,
+.cell i.js::after,
+.cell i.jq::after,
+.cell i.ng::after,
+.cell i.md::after,
+.cell i.ps::after,
+.cell i.fb::after,
+.cell i.php::after,
+.cell i.gh::after {
+	position: absolute;
+	bottom: -25%;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 10px;
+	color: #fff;
+	opacity: 0;
+	transition: .5s;
+}
+
 .cell i.html5:hover {color: #f16529;}
+.cell i.html5:hover::after {content: 'HTML5'; opacity: 1; font-family: 'Open Sans', sans-serif;}
 .cell i.css3:hover {color: #0270bb;}
+.cell i.css3:hover::after {content: 'CSS3'; opacity: 1; font-family: 'Open Sans', sans-serif;}
 .cell i.boot:hover {color: #563d7c;}
+.cell i.boot:hover::after {content: 'Bootstrap'; opacity: 1; font-family: 'Open Sans', sans-serif;}
 .cell i.mat:hover {color: #ee6e73;}
+.cell i.mat:hover::after {content: 'Materialize'; opacity: 1; font-family: 'Open Sans', sans-serif;}
 .cell i.js:hover {color: #ebc825;}
+.cell i.js:hover::after {content: 'JavaScript'; opacity: 1; font-family: 'Open Sans', sans-serif;}
 .cell i.jq:hover {color: #4155a5;}
+.cell i.jq:hover::after {content: 'jQuery'; opacity: 1; font-family: 'Open Sans', sans-serif;}
 .cell i.ng:hover {color: #e43137;}
+.cell i.ng:hover::after {content: 'AngularJS'; opacity: 1; font-family: 'Open Sans', sans-serif;}
 .cell i.md:hover {color: #e43137;}
+.cell i.md:hover::after {content: 'Interface'; opacity: 1; font-family: 'Open Sans', sans-serif;}
 .cell i.ps:hover {color: #9cd1fd;}
+.cell i.ps:hover::after {content: 'Photoshop'; opacity: 1; font-family: 'Open Sans', sans-serif;}
 .cell i.fb:hover {color: #ffcb2d;}
+.cell i.fb:hover::after {content: 'Firebase'; opacity: 1; font-family: 'Open Sans', sans-serif;}
 .cell i.php:hover {color: #6c7eb7;}
+.cell i.php:hover::after {content: 'PHP'; opacity: 1; font-family: 'Open Sans', sans-serif;}
 .cell i.gh:hover {color: #555555;}
+.cell i.gh:hover::after {content: 'GitHub'; opacity: 1; font-family: 'Open Sans', sans-serif;}
 
 .center {
 	align-items: center;

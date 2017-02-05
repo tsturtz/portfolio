@@ -31,14 +31,18 @@ $(function() {
   var windowWidth = $(window).width();
 
   $(document).ready(function(e) {
+    if (windowWidth >= 768) {
+        menu.addClass("show-menu");
+        toggleBtn.addClass("toggle-close");
+    }
     $(".menu li a, .hire-background a, #shout").on("click", function(e) {
       if (windowWidth >= 768) {
-        htmlBody.animate({scrollTop: $(this.hash).offset().top - 0}, 800, "easeInOutQuart");
+        htmlBody.animate({scrollTop: $(this.hash).offset().top - 50}, 800, "easeInOutQuart");
       }
       if (windowWidth <= 767) {
         htmlBody.animate({scrollTop: $(this.hash).offset().top - 0}, 800, "easeInOutQuart");
       }
-      e.preventDefault();                                  
+      e.preventDefault();
     });
   });
 
@@ -101,7 +105,6 @@ $(function() {
             data: data,
             type: 'POST',
             success: function (data) {
-                console.info(data);
                 $("#name, #email, #message").removeClass('success');
                 $("#success").fadeIn(500, 'swing');
                 $('#contactform').each(function () {
@@ -109,7 +112,6 @@ $(function() {
                 });
             },
             error: function (data) {
-                console.warn(data);
                 $("#name, #email, #message").removeClass('success');
                 $("#error").fadeIn(500, 'swing');
             }
@@ -145,7 +147,11 @@ $(function() {
     lat: initLatitude,
     lng: initLongitude,
     zoom: 11,
+    minZoom: 11,
+    maxZoom: 11,
+    clickableIcons: false,
     scrollwheel: false,
+    keyboardShortcuts: false,
     disableDefaultUI: true,
     styles:
 
