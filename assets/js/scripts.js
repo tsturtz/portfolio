@@ -32,8 +32,10 @@ $(function() {
 
   $(document).ready(function(e) {
     if (windowWidth >= 768) {
+      setTimeout(function(){
         menu.addClass("show-menu");
         toggleBtn.addClass("toggle-close");
+      }, 3500);
     }
     $(".menu li a, .hire-background a, #shout").on("click", function(e) {
       if (windowWidth >= 768) {
