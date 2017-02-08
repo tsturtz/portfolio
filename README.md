@@ -2,7 +2,7 @@
 
 My web development portfolio site highlighting applications I've developed and my services; there are links to my resume, code, and social media, and a contact form.
 
-**[Live link](https://www.taylorsturtz.com)**
+**[Live link](http://www.taylorsturtz.com)**
 
 ## Key Technologies:
 - **HTML5**
