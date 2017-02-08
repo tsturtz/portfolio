@@ -1,6 +1,6 @@
 # Portfolio
 
-My web development portfolio site highlighting applications I've developed and my services; there are links to my resume, code, and social media, and a contact form.
+My web development portfolio highlighting applications I've developed and my technology services. There is a contact form and links to my resume, GitHub, facebook, twitter, angellist, and linkedin.
 
 **[Live link](http://www.taylorsturtz.com)**
 
