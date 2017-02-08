@@ -1,7 +1,7 @@
 /*------------------------------------------------
 *
 *	Table of contents:
-*	1. 	Body/Main
+*	1. 	Main
 *	2. 	Toggle Menu
 *	3.	Home Section
 *	4.	Education/Experience Section
@@ -18,7 +18,7 @@
 -------------------------------------------------*/
 
 /*-------------------------------------------------
-	1. Body/Main
+	1. Main
 -------------------------------------------------*/
 html, body {
  	height: 100%;
@@ -1151,6 +1151,7 @@ a:hover {
 }
 
 .blink-text {
+	font-size: 18px;
 	-webkit-animation-name: blinker;
 	-webkit-animation-duration: 1s;
 	-webkit-animation-timing-function: linear;
