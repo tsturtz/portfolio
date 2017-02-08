@@ -19,8 +19,8 @@ $(function() {
   /*===============================================
     Scroll Spy
   ===============================================*/
-  $('body').scrollspy({ 
-    target: '.menu', 
+  $('body').scrollspy({
+    target: '.menu',
     offset: 50
   });
 
@@ -37,7 +37,7 @@ $(function() {
     }
     $(".menu li a, .hire-background a, #shout").on("click", function(e) {
       if (windowWidth >= 768) {
-        htmlBody.animate({scrollTop: $(this.hash).offset().top - 50}, 800, "easeInOutQuart");
+        htmlBody.animate({scrollTop: $(this.hash).offset().top - 40}, 800, "easeInOutQuart");
       }
       if (windowWidth <= 767) {
         htmlBody.animate({scrollTop: $(this.hash).offset().top - 0}, 800, "easeInOutQuart");
@@ -125,7 +125,7 @@ $(function() {
   /*===============================================
     Magnific Popup
   ===============================================*/
-  $('.lightbox-popup').magnificPopup({ 
+  $('.lightbox-popup').magnificPopup({
     type:'inline',
     fixedContentPos: false,
     removalDelay: 100,
