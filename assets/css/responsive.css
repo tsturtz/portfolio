@@ -1,6 +1,6 @@
 /*------------------------------------------------
 *
-*	Table of contents: 
+*	Table of contents:
 *	1. Screen resolution 768px+
 *	2. Screen resolution 992px+
 *	3. Screen resolution 1200px+
@@ -210,7 +210,7 @@
   4. Screen resolution between 768px and 991px
 -------------------------------------------------*/
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-	.skill-bar, 
+	.skill-bar,
 	.fact-box {
 		float: left;
 		width: 33.3%;
@@ -251,7 +251,7 @@
 		border-bottom: 1px solid rgb(220, 220, 220);
 		text-align: left;
 	}
-	.year h4, 
+	.year h4,
 	.resume-box span {
 		display: inline-block;
 	}
@@ -303,9 +303,9 @@
 	.nav li:last-child {
 		margin-bottom: 0;
 	}
-	.home-background, 
-	.skills-background, 
-	.hire-background, 
+	.home-background,
+	.skills-background,
+	.hire-background,
 	.facts-background,
 	.clients-background {
 		background-attachment: scroll;
@@ -320,7 +320,7 @@
 		-o-transform: translate(-50%,0);
 		transform: translate(-50%,0);
 	}
-	.white-layer, 
+	.white-layer,
 	.black-layer {
 		padding: 80px 20px;
 	}
@@ -381,7 +381,7 @@
 		width: 100%;
 		margin: 0 0 40px 0;
 	}
-	.col-left, 
+	.col-left,
 	.col-right {
 		width: 100%;
 		text-align: center;
@@ -409,7 +409,6 @@
     .cell i {
         font-size: 45px;
         color: #fff;
-        text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.3);
         transition: .5s;
         -ms-transform: translateY(50px);
         -webkit-transform: translateY(50px);
