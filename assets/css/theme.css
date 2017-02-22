@@ -755,11 +755,11 @@ textarea {
 .cell i.js::after,
 .cell i.jq::after,
 .cell i.ng::after,
-.cell i.md::after,
+.cell i.wp::after,
 .cell i.ps::after,
 .cell i.fb::after,
 .cell i.php::after,
-.cell i.gh::after {
+.cell i.git::after {
 	position: absolute;
 	bottom: -25%;
 	left: 50%;
@@ -768,6 +768,7 @@ textarea {
 	color: #fff;
 	opacity: 0;
 	transition: .5s;
+	font-style: normal;
 }
 
 .cell i.html5:hover {color: #f16529;}
@@ -784,16 +785,16 @@ textarea {
 .cell i.jq:hover::after {content: 'jQuery'; opacity: 1; font-family: 'Open Sans', sans-serif;}
 .cell i.ng:hover {color: #e43137;}
 .cell i.ng:hover::after {content: 'AngularJS'; opacity: 1; font-family: 'Open Sans', sans-serif;}
-.cell i.md:hover {color: #e43137;}
-.cell i.md:hover::after {content: 'Interface'; opacity: 1; font-family: 'Open Sans', sans-serif;}
+.cell i.wp:hover {color: #0087be;}
+.cell i.wp:hover::after {content: 'Wordpress'; opacity: 1; font-family: 'Open Sans', sans-serif;}
 .cell i.ps:hover {color: #9cd1fd;}
 .cell i.ps:hover::after {content: 'Photoshop'; opacity: 1; font-family: 'Open Sans', sans-serif;}
 .cell i.fb:hover {color: #ffcb2d;}
 .cell i.fb:hover::after {content: 'Firebase'; opacity: 1; font-family: 'Open Sans', sans-serif;}
 .cell i.php:hover {color: #6c7eb7;}
 .cell i.php:hover::after {content: 'PHP'; opacity: 1; font-family: 'Open Sans', sans-serif;}
-.cell i.gh:hover {color: #555555;}
-.cell i.gh:hover::after {content: 'GitHub'; opacity: 1; font-family: 'Open Sans', sans-serif;}
+.cell i.git:hover {color: #555555;}
+.cell i.git:hover::after {content: 'Git'; opacity: 1; font-family: 'Open Sans', sans-serif;}
 
 .center {
 	align-items: center;
